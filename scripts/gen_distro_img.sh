@@ -257,26 +257,8 @@ function export_rv_ubuntu_packages()
 	fi
 	rm -f $RV_LINUX_PACKAGE_INSTALL_DIR/*.deb
 
-	# image
-	cp $work_space/linux-image-[0-9]*.deb $RV_LINUX_PACKAGE_INSTALL_DIR
-	cp $work_space/linux-image-generic*.deb $RV_LINUX_PACKAGE_INSTALL_DIR
-
-	# headers
-	cp $work_space/linux-headers-[0-9]*.deb $RV_LINUX_PACKAGE_INSTALL_DIR
-	cp $work_space/linux-riscv-headers*.deb $RV_LINUX_PACKAGE_INSTALL_DIR
-	cp $work_space/linux-headers-generic*.deb $RV_LINUX_PACKAGE_INSTALL_DIR
-
-	# modules
-	cp $work_space/linux-modules*.deb $RV_LINUX_PACKAGE_INSTALL_DIR
-
-	# generic
-	cp $work_space/linux-generic*.deb $RV_LINUX_PACKAGE_INSTALL_DIR
-
-	# tools  
-	cp $work_space/linux-riscv-tools-*.deb $RV_LINUX_PACKAGE_INSTALL_DIR
-	cp $work_space/linux-tools-[0-9]*.deb $RV_LINUX_PACKAGE_INSTALL_DIR
-	cp $work_space/linux-tools-common*.deb $RV_LINUX_PACKAGE_INSTALL_DIR
-	cp $work_space/linux-tools-generic*.deb $RV_LINUX_PACKAGE_INSTALL_DIR
+	# export all deb
+	cp $work_space/*.deb $RV_LINUX_PACKAGE_INSTALL_DIR
 }
 
 function build_rv_ubuntu_kernel_native()
@@ -600,9 +582,7 @@ function build_rv_euler_kernel_native()
 	rm -f $RV_LINUX_PACKAGE_INSTALL_DIR/*.rpm
 
 	kernel_ver=${kernel_ver[0]}.${kernel_ver[1]}.${kernel_ver[2]}
-	cp -f RPMS/riscv64/kernel-${kernel_ver}*.rpm ${RV_LINUX_PACKAGE_INSTALL_DIR}
-	cp -f RPMS/riscv64/kernel-devel-${kernel_ver}*.rpm ${RV_LINUX_PACKAGE_INSTALL_DIR}
-	cp -f RPMS/riscv64/perf-${kernel_ver}*.rpm ${RV_LINUX_PACKAGE_INSTALL_DIR}
+	cp -f RPMS/riscv64/*.rpm ${RV_LINUX_PACKAGE_INSTALL_DIR}
 	popd
 
 	popd
