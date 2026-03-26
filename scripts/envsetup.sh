@@ -640,7 +640,7 @@ function build_rv_kernel()
 	fi
 	if [ "$1" = "tp" ]; then
 		echo "Disable schedule for tp kernel!"
-		cp $RV_TOP_DIR/bootloader-riscv/scripts/disable_sche.c drivers/soc/sophgo/map_memory
+		cp $RV_TOP_DIR/bootloader-riscv/scripts/disable_sche.c drivers/soc/tpu/map_memory
 		patch -p1 < $RV_TOP_DIR/bootloader-riscv/scripts/tp_disable_sche.patch
 	fi
 	make O=$RV_KERNEL_BUILD_DIR ARCH=riscv CROSS_COMPILE=$RISCV64_LINUX_CROSS_COMPILE $RV_KERNEL_CONFIG
@@ -662,7 +662,7 @@ function build_rv_kernel()
 		mv $RV_KERNEL_SRC_DIR/arch/riscv/Kconfig.orig $RV_KERNEL_SRC_DIR/arch/riscv/Kconfig
 	fi
 	if [ "$1" = "tp" ]; then
-		rm -rf drivers/soc/sophgo/map_memory/disable_sche.c
+		rm -rf drivers/soc/tpu/map_memory/disable_sche.c
 		patch -R -p1 < $RV_TOP_DIR/bootloader-riscv/scripts/tp_disable_sche.patch
 	fi
 	popd
