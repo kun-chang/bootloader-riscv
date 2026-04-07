@@ -1,3 +1,36 @@
+# 20260407
+
+## bootloader-riscv
+branch: master \
+tag: NA \
+commit: 5975ccaa292567472dbaf5e206404a5c556de661
+
++ SG204x: Move firmware release note to sophgo-edk2
++ Don't update binaries in git repo
++ SG2042: Using zsbl binaries in edk2-non-osi
++ SG2042: Copy zsbl binaries to edk2-non-osi
++ SG2044: Update ci after fsbl.bin removed
++ SG2044: Move fsbl.bin to sophgo-edk2
+
+## sophgo-edk2
+branch: devel-sg2042 \
+tag: NA \
+commit: 
+
++ Firmware v1.4.0 release
+
+## linux-riscv
+branch: sg2042-dev-6.6 \
+tag: NA \
+commit: eea78441367f0b8deaac83dee9c5827f7d95e638
+
++ Fix python2 syntax in decode_msr.py
++ Add all segments of SG2042 to PCI ecam quirk list
++ SG2042: Sync defconfig with openEuler 24.03 LTS SP3
++ drivers/net: Fix dwmac phy_node with wrong types
++ RISC-V: Add defines for SBI debug console extension
++ RISC-V: Add SBI debug console helper routines
+
 # 20260318
 
 ## bootloader-riscv
