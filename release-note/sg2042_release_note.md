@@ -1,3 +1,26 @@
+# 20260408
+
+## bootloader-riscv
+branch: master \
+tag: NA \
+commit: 9bc4e6ba249fffed0dba5901f4ec60e600ed45a7
+
++ No update
+
+## sophgo-edk2
+branch: devel-sg2042 \
+tag: sg2042_sophgo-edk2_20260408 \
+commit: d8426e472fdea508207ae3ff99ad472f4c089715
+
++ Firmware v1.4.1 release
+
+## linux-riscv
+branch: sg2042-dev-6.6 \
+tag: SG2042_Linux-6.6.127_v20260402 \
+commit: eea78441367f0b8deaac83dee9c5827f7d95e638
+
++ No update
+
 # 20260407
 
 ## bootloader-riscv
@@ -14,14 +37,14 @@ commit: 5975ccaa292567472dbaf5e206404a5c556de661
 
 ## sophgo-edk2
 branch: devel-sg2042 \
-tag: NA \
+tag: sg2042_sophgo-edk2_20260407 \
 commit: 
 
 + Firmware v1.4.0 release
 
 ## linux-riscv
 branch: sg2042-dev-6.6 \
-tag: NA \
+tag: SG2042_Linux-6.6.127_v20260402 \
 commit: eea78441367f0b8deaac83dee9c5827f7d95e638
 
 + Fix python2 syntax in decode_msr.py
