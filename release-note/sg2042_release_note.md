@@ -1,3 +1,26 @@
+# 20260714
+
+## bootloader-riscv
+branch: master \
+tag: NA \
+commit: 80fbc1294001c80ab777f251652cca9eb4e896b7
+
++ No update
+
+## sophgo-edk2
+branch: devel-sg2042 \
+tag: sg2042_sophgo-edk2_20260617 \
+commit: cd2d36fde3e0247a91fdb192f17882a4dc317159
+
++ No update
+
+## linux-riscv
+branch: sg2042-dev-6.6 \
+tag: SG2042_Linux-6.6.127_v20260706 \
+commit: 97c1115b13cd15ffe33a4168e78727c1cd0e9e8e
+
++ irqchip/sifive-plic: fix stuck in-progress IRQ on affinity migration
+
 # 20260622
 
 ## bootloader-riscv
